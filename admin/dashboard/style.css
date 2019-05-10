@@ -1,0 +1,237 @@
+body,html{
+    margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+/* General Styles */
+body {
+  background: #fff;
+  color: #303030;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  left: 0;
+  -webkit-font-smoothing: antialiased !important;
+}
+html.no-js #fallback-nav {
+  display: block;
+}
+html.no-js .fade {
+  display: none;
+}
+html.no-js #navicon {
+  display: none;
+}
+html.js #fallback-nav {
+  display: none;
+}
+#fallback-nav {
+  float: right;
+}
+#fallback-nav li {
+  display: inline-block;
+}
+#fallback-nav li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #303030;
+  border: 1px solid #f8da5f;
+}
+#fallback-nav li a:hover, #fallback-nav li a.current {
+  background: #fae590;
+  border: 1px solid #e7bc0a;
+}
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background: #2b2a34;
+  padding: 10px;
+  z-index: 99;
+  border-bottom: 1px solid #403e51;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  color: #f2e9e4;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #22223b;
+}
+.logo{
+    width: 240px;
+    height: 40px;
+}
+#main-content {
+  max-width: 580px;
+  margin: 100px auto;
+  padding: 0 30px;
+}
+.add-user{
+    text-decoration: none;
+}
+.add-user div{
+    width: 100%;
+    background-color: #1ebbf0;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.logout{
+    background-color: black;
+    width: 100px;
+    float: right;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+h2 a {
+  text-decoration: none;
+}
+.older {
+  background: #403e4f;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.older:hover {
+  color: white;
+  background: #6e6b88;
+}
+#navicon {
+  float: right;
+  font-size: 2em;
+  text-decoration: none;
+  z-index: 9;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  line-height: 58px;
+  font-weight: 100;
+}
+#navicon:hover {
+  color: #fff;
+}
+#navicon.open {
+  color: #f2e9e4;
+}
+#navicon.open:hover {
+  color: #e1cdc2;
+}
+#main-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 250px;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  right: -250px;
+  position: fixed;
+  background: #1f1e27;
+  text-align: center;
+  border-left: 2px solid #403e51;
+}
+#main-nav a {
+  flex: 1;
+  color: #fff;
+  border-top: 1px solid #403e4f;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#main-nav a:hover, #main-nav a.current {
+  background: #403e4f;
+}
+.fade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #4a4e69;
+  opacity: 0.5;
+  z-index: 9;
+}
+/*                        users.php                      */
+.form .uinput{
+    width: 100%;
+    padding: 10px 20px;
+    background: #f8f8f8;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom: 25px;
+    color: black !important;
+    font-size: 13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.form .uinput:focus{
+    color:white;
+    outline:none;
+    border:1px solid #8BC3A3
+}
+.form .usubmit{
+    width: 100%;
+    padding: 0 10px;
+    line-height: 40px;
+    background: #1ebbf0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.form .usubmit:hover{
+    background-color: #1a9dc9;
+}
